@@ -13,7 +13,7 @@ body{
 
 
 header {
-	background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url(img/2.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(img/3.jpg);
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -30,7 +30,7 @@ header {
 
 h1 {
 	margin: 0;
-	color: #fff;
+	color: #fff;	
 }
 
 a{
