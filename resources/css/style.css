@@ -38,9 +38,9 @@ HEADER
 
 header {
 	height: 100vh;
-	background-image: url(img/bg2.gif);
+	background-image: url(img/bg.gif);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: right;
 }
 
@@ -56,7 +56,7 @@ h1,
 h2,
 h3 {
 	
-	color: #555;
+	color: #f2f2f2;
 	text-transform: uppercase;
 	
 }
@@ -247,6 +247,9 @@ BUTTON
 /*----------------------------------------------------------
 BUTTON
 ----------------------------------------------------------*/
+.works {
+	background-color: #f4f4f4;
+}
 
 .work-div img{
 	width: 100%;
@@ -254,7 +257,11 @@ BUTTON
 	padding-right: 3%;
 }
 
-.work-div div {
+.work-step {
+	margin-bottom: 50px;
+}
+
+.work-step div {
 	display: inline-block;
 	color: #3b5998;
 	border: 2px solid #3b5998;
@@ -263,14 +270,16 @@ BUTTON
 	font-size: 200%;
 	text-align: center;
 	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
 }
-
 
 .work-div a:link,
 .work-div a:visited {
 	background-color: #3b5998;
 	border: 1px solid #3b5998;
 	color: #fff;
+	margin-top: 50px;
 }
 
 .work-div a:hover,
