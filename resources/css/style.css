@@ -56,7 +56,7 @@ h1,
 h2,
 h3 {
 	
-	color: #f2f2f2;
+	color: #555;
 	text-transform: uppercase;
 	
 }
@@ -67,6 +67,7 @@ h1{
 	word-spacing: 4px;
 	font-size: 200%;
 	letter-spacing: 1px;
+	
 		
 }
 
@@ -251,6 +252,10 @@ BUTTON
 	background-color: #f4f4f4;
 }
 
+.work-div {
+	margin-top: 50px;
+}
+
 .work-div img{
 	width: 100%;
 	float: right;
@@ -279,12 +284,11 @@ BUTTON
 	background-color: #3b5998;
 	border: 1px solid #3b5998;
 	color: #fff;
-	margin-top: 50px;
 }
 
 .work-div a:hover,
 .work-div a:active {
-	background-color: #fff;
+	background-color: transparent;
 	border: 1px solid #3b5998;
 	color: #3b5998;
 }
