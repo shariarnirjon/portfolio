@@ -320,3 +320,37 @@ project
 .project-details a:hover {
 	color: #061d4d;
 }
+
+/*----------------------------------------------------------
+CLAINTS FEEDBACK
+----------------------------------------------------------*/
+
+.clainets-feedback {
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/claients-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+}
+
+.clainets-feedback h2 {
+	color: #fff;
+}
+
+blockquote {
+	font-style: italic;
+	text-align: justify;
+}
+
+cite {
+	display: block;
+	font-size: 90%;
+	margin-top: 20px;
+}
+
+cite img {
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+
+}
