@@ -1,7 +1,6 @@
-/*----------------------------------------------------------
-GLOBAL
-----------------------------------------------------------*/
-
+/*-----------------------------------------------------------*/
+/*----------------------- GLOVAl ----------------------------*/
+/*-----------------------------------------------------------*/
 *{
 	margin:0;
 	padding: 0;
@@ -16,14 +15,13 @@ body{
 	font-weight: 300;
 }
 
+section{ padding: 80px 0; }
+
 .row {
 	width: 1140px;
 	margin: 0 auto;
 }
 
-section{
-	padding: 80px 0;
-}
 
 .clearfix {zoom:1;}
 .clearfix:after {
@@ -33,26 +31,11 @@ section{
 	height: 0;
 	visibility: hidden;
 }
-/*----------------------------------------------------------
-HEADER
-----------------------------------------------------------*/
 
-header {
-	height: 100vh;
-	background-image: url(img/bg.gif);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: right;
-}
 
-.hero-text {
-	position: absolute;
-	width: 1140px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
+/*-----------------------------------------------------------*/
+/*----------------------- HEADING ---------------------------*/
+/*-----------------------------------------------------------*/
 h1,
 h2,
 h3 {
@@ -98,23 +81,9 @@ h3{
 }
 
 
-.about-text{
-	width: 70%;
-	margin-left: 15%;
-	text-align: center;
-	margin-bottom: 30px;
-	line-height: 140%;
-	font-size: 90%;
-}
-
-span {
-		font-size: 80%;
-		font-weight: 300;
-}
-/*----------------------------------------------------------
-BUTTON
-----------------------------------------------------------*/
-
+/*-----------------------------------------------------------*/
+/*------------------------ BUTTON ---------------------------*/
+/*-----------------------------------------------------------*/
 .btn,
 input[type=submit] {
 	text-decoration: none;
@@ -154,6 +123,9 @@ input[type=submit]:hover {
 	color: #fff;
 }
 
+/*-----------------------------------------------------------*/
+/*--------------------------- NAV ---------------------------*/
+/*-----------------------------------------------------------*/
 .Logo{
 	height: 80px;
 	width: 80px;
@@ -173,16 +145,18 @@ input[type=submit]:hover {
 	margin-right: 20px;
 }
 
-.main-nav li a {
+.main-nav li:last-child{ margin-right: 0; }
+
+.main-nav li a:link,
+.main-nav li a:visited {
 	text-decoration: none;
 	text-transform: uppercase;
 	color:#211F1F;
 	font-size: 90%; 
 }
 
-.main-nav li a:hover{
-	color: #ccc;
-}
+.main-nav li a:hover,
+.main-nav li a:active {	color: #ccc; }
 
 .resume{
 	border: 1px solid #555;
@@ -190,20 +164,47 @@ input[type=submit]:hover {
 	border-radius: 5px
 }
 
-.resume:hover{
-		border: 1px solid #ccc;
+.resume:hover{	order: 1px solid #ccc; }
+
+
+/*-----------------------------------------------------------*/
+/*----------------------- HEADER ----------------------------*/
+/*-----------------------------------------------------------*/
+
+
+header {
+	height: 100vh;
+	background-image: url(img/bg.gif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
 }
 
-.main-nav li:last-child{
-	margin-right: 0;
+.hero-text {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/*----------------------------------------------------------
-ABOUT SECTION
-----------------------------------------------------------*/
-.box{
-	padding: 1%;
+span {
+		font-size: 80%;
+		font-weight: 300;
 }
+
+/*-----------------------------------------------------------*/
+/*------------------------ ABOUT ----------------------------*/
+/*-----------------------------------------------------------*/
+.about-text{
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+	margin-bottom: 30px;
+	line-height: 140%;
+	font-size: 90%;
+}
+.box{ padding: 1%; }
 
 .icon-big{
 	font-size: 250%;
@@ -218,13 +219,11 @@ ABOUT SECTION
 	text-align: justify;
 }
 
-/*----------------------------------------------------------
-BUTTON
-----------------------------------------------------------*/
 
-.skills ul {
-	list-style: none;
-}
+/*-----------------------------------------------------------*/
+/*----------------------- SKILLS ----------------------------*/
+/*-----------------------------------------------------------*/
+.skills ul { list-style: none; }
 
 .skills ul li {
 	display: inline-block;
@@ -246,19 +245,15 @@ BUTTON
 	opacity: 100%;
 }
 
-.skills{
-	padding: 0;
-}
-/*----------------------------------------------------------
-BUTTON
-----------------------------------------------------------*/
-.works {
-	background-color: #f4f4f4;
-}
+.skills{ padding: 0; }
 
-.work-div {
-	margin-top: 50px;
-}
+
+/*-----------------------------------------------------------*/
+/*----------------------- WORKS -----------------------------*/
+/*-----------------------------------------------------------*/
+.works { background-color: #f4f4f4; }
+
+.work-div {	margin-top: 50px; }
 
 .work-div img{
 	width: 100%;
@@ -266,9 +261,7 @@ BUTTON
 	padding-right: 3%;
 }
 
-.work-step {
-	margin-bottom: 50px;
-}
+.work-step { margin-bottom: 50px; }
 
 .work-step div {
 	display: inline-block;
@@ -297,12 +290,9 @@ BUTTON
 	color: #3b5998;
 }
 
-/*----------------------------------------------------------
-project
-----------------------------------------------------------*/
-
-
-
+/*-----------------------------------------------------------*/
+/*----------------------- PROJECT ---------------------------*/
+/*-----------------------------------------------------------*/
 .project-img {
 	width: 100%;
 	height: auto;
@@ -325,10 +315,10 @@ project
 	color: #061d4d;
 }
 
-/*----------------------------------------------------------
-CLAINTS FEEDBACK
-----------------------------------------------------------*/
 
+/*-----------------------------------------------------------*/
+/*----------------------- FEEDBACK --------------------------*/
+/*-----------------------------------------------------------*/
 .clainets-feedback {
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/claients-bg.jpg);
 	background-size: cover;
@@ -336,9 +326,7 @@ CLAINTS FEEDBACK
 	color: #fff;
 }
 
-.clainets-feedback h2 {
-	color: #fff;
-}
+.clainets-feedback h2 { color: #fff; }
 
 blockquote {
 	font-style: italic;
@@ -367,13 +355,13 @@ cite img {
 	border-radius: 50%;
 	margin-right: 10px;
 	vertical-align: middle;
-
 }
 
 
-.hire-me {
-	background-color: #f4f4f4;
-}
+/*-----------------------------------------------------------*/
+/*----------------------- HIRE ME ---------------------------*/
+/*-----------------------------------------------------------*/
+.hire-me { background-color: #f4f4f4; }
 
 .card {
 	background-color: #fff;
@@ -394,26 +382,18 @@ cite img {
 	border-top-left-radius: 5px;
 }
 
-.card div h3 {
-	text-align: left;
-}
+.card div h3 { text-align: left; }
 
 .card div p {
 	font-size: 250%;
 	color: #3b5998;
 }
 
-.card div p span {
-	font-size: 35%;
-}
+.card div p span { font-size: 35%; }
 
-.card div ul {
-	list-style: none;
-}
+.card div ul { list-style: none; }
 
-.card div ul li {
-	padding: 10px;
-}
+.card div ul li { padding: 10px; }
 
 .card div ul li i {
 	margin-right: 5px;
@@ -425,13 +405,12 @@ cite img {
 	text-align: center;
 }
 
-.card div:last-child {
-	border-bottom: none;
-}
+.card div:last-child { border-bottom: none; }
 
-/*----------------------------------------------------------
-CONTACT WITH ME
-----------------------------------------------------------*/
+
+/*-----------------------------------------------------------*/
+/*----------------------- CONTACT ---------------------------*/
+/*-----------------------------------------------------------*/
 input[type=text],
 input[type=email],
 select,
@@ -449,9 +428,8 @@ textarea { height: 100px; }
 *:focus { outline: none; }
 
 
-
 /*-----------------------------------------------------------*/
-/* FOOTER*/
+/*----------------------- FOOTER ---------------------------*/
 /*-----------------------------------------------------------*/
 
 footer {
@@ -473,18 +451,9 @@ footer ul li:last-child {
 	margin-right: 0;
 }
 
-.about-links {
-	float: left;
-}
+.about-links { float: left; }
 
-.social-links {
-	float: right;
-}
-
-.copyright {
-	padding: 50px 0;
-	text-align: center;
-}
+.social-links { float: right; }
 
 footer a:link,
 footer  a:visited,
@@ -496,4 +465,9 @@ footer  a:visited,
 footer  a:active,
 footer  a:hover {
 	color: #f2f2f2;
+}
+
+.copyright {
+	padding: 50px 0;
+	text-align: center;
 }
